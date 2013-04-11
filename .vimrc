@@ -7,6 +7,8 @@
 " -----------------------------------
 set nocompatible
 set history=50
+set tabstop=4
+set encoding=utf-8
 
 " -----------------------------------
 " Search
@@ -49,6 +51,8 @@ NeoBundle 'git://github.com/mattn/zencoding-vim.git'
 NeoBundle 'git://github.com/hallettj/jslint.vim.git'
 NeoBundle 'git://github.com/tpope/vim-surround.git'
 NeoBundle 'git://github.com/h1mesuke/vim-alignta.git'
+NeoBundle 'git://github.com/groenewege/vim-less.git'
+NeoBundle 'git://github.com/kchmck/vim-coffee-script.git'
 
 " -----------------------------------
 " Filetype specific settings
@@ -104,4 +108,11 @@ let g:NeoComplCache_MinSyntaxLength = 3
 " Set manual completion length.
 let g:NeoComplCache_ManualCompletionStartLength = 0
 
-
+" -----------------------------------
+" Set formatoptions for each filetype.
+" -----------------------------------
+augroup mycustomfiletype
+  autocmd!
+  " FileType共通で設定したければ
+  autocmd FileType * setlocal fo-=t fo-=c fo-=r fo-=o
+augroup END
