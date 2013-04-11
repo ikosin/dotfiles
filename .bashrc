@@ -1,3 +1,11 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+  . /etc/bashrc
+fi
+
+# alias
 alias ll='ls -lhnG'
 alias la='ls -lhaG'
 alias sl='ls -lhnG'
@@ -9,6 +17,8 @@ alias mv='mv -i'
 alias cp='cp -i'
 #Chromeで開く
 alias Chrome='open -a /Applications/Google\ Chrome.app'
+#iPhoneSimulator
+alias iPhone='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
 #履歴を重複させない
 export HISTCONTROL=ignoreboth
