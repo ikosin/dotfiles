@@ -31,3 +31,6 @@ export PATH="${PATH}:/Developer/SDKs/flex_sdk_4/bin"
 #プロンプトに色付け
 PS1="\h:\[\e[1;36m\]\w\[\e[00m\] \u\$ "
 
+# for rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
