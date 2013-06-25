@@ -34,3 +34,10 @@ PS1="\h:\[\e[1;36m\]\w\[\e[00m\] \u\$ "
 # for rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# for AWS
+export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+export AWS_RDS_HOME=~/aws/RDSCli-1.14.001
+export PATH=$PATH:$AWS_RDS_HOME/bin
+export AWS_CREDENTIAL_FILE=~/aws/RDSCli-1.14.001/credential-file-path
+export EC2_PRIVATE_KEY=~/.ssh/aws/VN.pem
