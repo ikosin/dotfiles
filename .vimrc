@@ -8,6 +8,7 @@
 set nocompatible
 set history=50
 set tabstop=4
+set shiftwidth=4
 set encoding=utf-8
 
 " -----------------------------------
@@ -116,3 +117,8 @@ augroup mycustomfiletype
   " FileType共通で設定したければ
   autocmd FileType * setlocal fo-=t fo-=c fo-=r fo-=o
 augroup END
+
+" -----------------------------------
+" Setting about zencoding-vim
+" -----------------------------------
+let g:user_zen_settings = { 'indentation':'    ' }
