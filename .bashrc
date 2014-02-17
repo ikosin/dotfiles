@@ -21,6 +21,8 @@ alias Chrome='open -a /Applications/Google\ Chrome.app'
 alias iPhone='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 #MacVimで開く
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g --remote-tab-silent'
+#サーバー起動
+alias simpleHTTPServer='python -m SimpleHTTPServer 8000'
 
 #履歴を重複させない
 export HISTCONTROL=ignoreboth
