@@ -56,6 +56,7 @@ NeoBundle 'git://github.com/h1mesuke/vim-alignta.git'
 NeoBundle 'git://github.com/groenewege/vim-less.git'
 NeoBundle 'git://github.com/kchmck/vim-coffee-script.git'
 NeoBundle 'tpope/vim-markdown'
+NeoBundle 'mbbill/undotree'
 
 " -----------------------------------
 " Filetype specific settings
