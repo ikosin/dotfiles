@@ -48,12 +48,14 @@ NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
 NeoBundle 'git://github.com/Shougo/unite.vim.git'
 NeoBundle 'git://github.com/Shougo/vimproc.git'
 NeoBundle 'git://github.com/Shougo/neocomplcache.git'
-NeoBundle 'git://github.com/mattn/zencoding-vim.git'
+"NeoBundle 'git://github.com/mattn/zencoding-vim.git'
+NeoBundle 'mattn/emmet-vim'
 NeoBundle 'git://github.com/hallettj/jslint.vim.git'
 NeoBundle 'git://github.com/tpope/vim-surround.git'
 NeoBundle 'git://github.com/h1mesuke/vim-alignta.git'
 NeoBundle 'git://github.com/groenewege/vim-less.git'
 NeoBundle 'git://github.com/kchmck/vim-coffee-script.git'
+NeoBundle 'tpope/vim-markdown'
 
 " -----------------------------------
 " Filetype specific settings
@@ -119,6 +121,8 @@ augroup mycustomfiletype
 augroup END
 
 " -----------------------------------
-" Setting about zencoding-vim
+" "Setting about zencoding-vim
+" Setting about emmet-vim
 " -----------------------------------
-let g:user_zen_settings = { 'indentation':'    ' }
+"let g:user_zen_settings = { 'indentation':'    ' }
+let g:user_emmet_settings = { 'indentation':'    ' }
