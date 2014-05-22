@@ -31,7 +31,11 @@ set ruler
 " -----------------------------------
 " File system
 " -----------------------------------
+set directory=~/.vim/tmp
+"set backupdir=~/.vim/tmp
 set nobackup
+"set undodir=~/.vim/tmp
+set noundofile
 
 " -----------------------------------
 " Set neobundle.vim
