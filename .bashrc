@@ -45,3 +45,9 @@ export AWS_RDS_HOME=~/aws/RDSCli-1.14.001
 export PATH=$PATH:$AWS_RDS_HOME/bin
 export AWS_CREDENTIAL_FILE=~/aws/RDSCli-1.14.001/credential-file-path
 export EC2_PRIVATE_KEY=~/.ssh/aws/VN.pem
+
+# for Berkshelf
+export PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
+
+# for Cpan
+export PERL5LIB=$HOME/.cpan/build/
