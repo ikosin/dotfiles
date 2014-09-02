@@ -61,6 +61,7 @@ NeoBundle 'git://github.com/groenewege/vim-less.git'
 NeoBundle 'git://github.com/kchmck/vim-coffee-script.git'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'mbbill/undotree'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 " -----------------------------------
 " Filetype specific settings
@@ -131,3 +132,36 @@ augroup END
 " -----------------------------------
 "let g:user_zen_settings = { 'indentation':'    ' }
 let g:user_emmet_settings = { 'indentation':'    ' }
+
+" -----------------------------------
+" Set EasyMotion
+" http://haya14busa.com/mastering-vim-easymotion/
+" -----------------------------------
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-s)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-s2)
+
+" Turn on case sensitive feature
+" type `l` and match `l`&`L`
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
+" Within Line Motion
+map f <Plug>(easymotion-fl)
+map t <Plug>(easymotion-tl)
+map F <Plug>(easymotion-Fl)
+map T <Plug>(easymotion-Tl)
+
+" Jump to first match with enter
+let g:EasyMotion_enter_jump_first = 1
+
