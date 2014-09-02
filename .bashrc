@@ -26,6 +26,8 @@ alias simpleHTTPServer='python -m SimpleHTTPServer 8000'
 
 #履歴を重複させない
 export HISTCONTROL=ignoreboth
+# 保存する履歴の数を増やす
+export HISTFILESIZE=50000
 
 #Flex4
 export PATH="${PATH}:/Developer/SDKs/flex_sdk_4/bin"
