@@ -62,6 +62,7 @@ NeoBundle 'git://github.com/kchmck/vim-coffee-script.git'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'vim-ruby/vim-ruby'
 
 " -----------------------------------
 " Filetype specific settings
