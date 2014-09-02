@@ -6,10 +6,12 @@
 " General
 " -----------------------------------
 set nocompatible
-set history=50
+set history=300
 set tabstop=4
 set shiftwidth=4
 set encoding=utf-8
+set modelines=1
+set expandtab
 
 " -----------------------------------
 " Search
@@ -27,6 +29,9 @@ syntax on
 set number
 set title
 set ruler
+set list
+set listchars=tab:»\ ,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
 
 " -----------------------------------
 " File system
