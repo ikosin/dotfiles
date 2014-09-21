@@ -36,8 +36,10 @@ export PATH="${PATH}:/Developer/SDKs/flex_sdk_4/bin"
 PS1="\h:\[\e[1;36m\]\w\[\e[00m\] \u\$ "
 
 # for rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if type "rbenv" > /dev/null 2>&1; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 # for AWS
 export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home

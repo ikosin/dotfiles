@@ -2,4 +2,6 @@ if [ -f ~/.bashrc ] ; then
 . ~/.bashrc
 fi
 
-source ~/perl5/perlbrew/etc/bashrc
+if [ -f ~/perl5/perlbrew/etc/bashrc ] ; then
+  source ~/perl5/perlbrew/etc/bashrc
+fi

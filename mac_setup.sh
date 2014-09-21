@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # homebrew
-if ! type "brew" > /dev/null; then
+if ! type "brew" > /dev/null 2>null1; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # nodebrew
-if ! type "nodebrew" > /dev/null; then
+if ! type "nodebrew" > /dev/null 2>null1; then
     curl -L git.io/nodebrew | perl - setup
 fi
 
