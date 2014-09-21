@@ -51,3 +51,6 @@ export PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
 
 # for Cpan
 export PERL5LIB=$HOME/.cpan/build/
+
+# for nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
