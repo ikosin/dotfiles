@@ -68,6 +68,8 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'vim-ruby/vim-ruby'
+"NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 " -----------------------------------
 " Filetype specific settings
