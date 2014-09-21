@@ -31,10 +31,10 @@ do
 done
 
 # vim directories
-VIM_DIRECTORIES=( backup swap undo )
-for directory in ${DOT_FILES[@]}
+VIM_DIRECTORIES=( backup swap undo tmp )
+for directory in ${VIM_DIRECTORIES[@]}
 do
-  if [ -d ~/$directory ]; then
+  if [ -d ~/.vim/$directory ]; then
     echo "$directory already exists"
   else
     mkdir ~/.vim/$directory
