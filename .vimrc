@@ -132,6 +132,8 @@ augroup mycustomfiletype
   autocmd!
   " FileType共通で設定したければ
   autocmd FileType * setlocal fo-=t fo-=c fo-=r fo-=o
+  " Set *.txt to be markdown
+  au BufNewFile,BufRead *.txt setlocal filetype=markdown
 augroup END
 
 " -----------------------------------
