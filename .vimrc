@@ -49,27 +49,43 @@ filetype off
 filetype plugin indent off
 
 if has('vim_starting')
+  set nocompatible " Be iMproved
+
+  " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle'))
 endif
 
-NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
-NeoBundle 'git://github.com/Shougo/unite.vim.git'
-NeoBundle 'git://github.com/Shougo/vimproc.git'
-NeoBundle 'git://github.com/Shougo/neocomplcache.git'
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/unite.vim.git'
+NeoBundle 'Shougo/vimproc.git'
+NeoBundle 'Shougo/neocomplcache.git'
 "NeoBundle 'git://github.com/mattn/zencoding-vim.git'
 NeoBundle 'mattn/emmet-vim'
-NeoBundle 'git://github.com/hallettj/jslint.vim.git'
-NeoBundle 'git://github.com/tpope/vim-surround.git'
-NeoBundle 'git://github.com/h1mesuke/vim-alignta.git'
-NeoBundle 'git://github.com/groenewege/vim-less.git'
-NeoBundle 'git://github.com/kchmck/vim-coffee-script.git'
+NeoBundle 'hallettj/jslint.vim.git'
+NeoBundle 'tpope/vim-surround.git'
+NeoBundle 'h1mesuke/vim-alignta.git'
+NeoBundle 'groenewege/vim-less.git'
+NeoBundle 'kchmck/vim-coffee-script.git'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'vim-ruby/vim-ruby'
 "NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
+
+call neobundle#end()
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
 
 " -----------------------------------
 " Filetype specific settings
