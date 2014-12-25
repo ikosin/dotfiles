@@ -39,7 +39,7 @@ PS1="\h:\[\e[1;36m\]\w\[\e[00m\] \u\$ "
 # for rbenv
 if type "rbenv" > /dev/null 2>&1; then
   export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
+  eval "$(rbenv init --no-rehash -)"
 fi
 
 # for AWS
