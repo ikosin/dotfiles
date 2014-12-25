@@ -11,6 +11,7 @@ alias la='ls -lhaG'
 alias sl='ls -lhnG'
 alias ..='cd ..'
 alias vi='vim'
+alias less='less -iMR'
 #うっかり防止
 alias rm='rm -i'
 alias mv='mv -i'
