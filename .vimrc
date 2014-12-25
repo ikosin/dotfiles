@@ -78,6 +78,9 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'vim-ruby/vim-ruby'
 "NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
+"NeoBundle 'Lokaltog/powerline'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'Shougo/vimfiler.vim'
 
 call neobundle#end()
 " Required:
@@ -104,7 +107,7 @@ set showmatch
 " Show file encoding and file format
 " -----------------------------------
 set laststatus=2
-set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=\(%v,%l)/%L%8P\ 
+"set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=\(%v,%l)/%L%8P\ 
 
 " -----------------------------------
 " Shift left
