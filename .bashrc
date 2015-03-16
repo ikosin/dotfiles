@@ -24,6 +24,8 @@ alias iPhone='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSi
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g --remote-tab-silent'
 #サーバー起動
 alias simpleHTTPServer='python -m SimpleHTTPServer 8000'
+# LGTM
+alias lgtm='sh ~/tools/lgtm.sh/lgtm.sh -m | pbcopy'
 
 #履歴を重複させない
 export HISTCONTROL=ignoreboth
