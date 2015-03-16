@@ -81,6 +81,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 "NeoBundle 'Lokaltog/powerline'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 " Required:
