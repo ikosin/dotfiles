@@ -66,3 +66,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # for Packer
 export PATH=$PATH:/Users/jun/packer
+
+# Bash Completion
+if [ -f /usr/local/etc/bash_completion ]; then
+  . /usr/local/etc/bash_completion
+fi
