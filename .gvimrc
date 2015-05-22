@@ -2,7 +2,13 @@ set nocompatible
 colorscheme torte
 " colorscheme desert
 
+" L&F
 set transparency=25
+set lines=40 columns=120
+
+" font
+set guifont=Andale\ Mono:h24
+set guifontwide=ヒラギノ角ゴ\ StdN\ W8:h24
 
 " vim-indent-guides
 let g:indent_guides_auto_colors=0
