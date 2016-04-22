@@ -24,14 +24,20 @@ alias iPhone='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSi
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g --remote-tab-silent'
 #サーバー起動
 alias simpleHTTPServer='python -m SimpleHTTPServer 8000'
+alias corsHTTPServer="ruby -rsinatra -e 'set :port,8000; set :public_folder, File.dirname(__FILE__); get(\"/\"){response[\"Access-Control-Allow-Origin\"] = \"*\"; send_file File.expand_path(\"index.html\", settings.public_folder)}'"
 # LGTM
 alias lgtm='sh ~/tools/lgtm.sh/lgtm.sh -m | pbcopy'
+
+# エディタ指定
+export EDITOR='vim'
 
 #履歴を重複させない
 export HISTCONTROL=ignoreboth
 # 保存する履歴の数を増やす
 export HISTFILESIZE=50000
 export HISTSIZE=50000
+# 履歴に日時を残す
+export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 
 #Flex4
 export PATH="${PATH}:/Developer/SDKs/flex_sdk_4/bin"
@@ -71,3 +77,6 @@ export PATH=$PATH:/Users/jun/packer
 if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
 fi
+
+# for direnv
+eval "$(direnv hook bash)"

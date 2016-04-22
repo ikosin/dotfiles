@@ -67,7 +67,7 @@ NeoBundle 'Shougo/vimproc.git'
 NeoBundle 'Shougo/neocomplcache.git'
 "NeoBundle 'git://github.com/mattn/zencoding-vim.git'
 NeoBundle 'mattn/emmet-vim'
-NeoBundle 'hallettj/jslint.vim.git'
+"NeoBundle 'hallettj/jslint.vim.git'
 NeoBundle 'tpope/vim-surround.git'
 NeoBundle 'h1mesuke/vim-alignta.git'
 NeoBundle 'groenewege/vim-less.git'
@@ -82,6 +82,9 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'airblade/vim-gitgutter'
 
 call neobundle#end()
 " Required:
@@ -172,11 +175,11 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " Bi-directional find motion
 " Jump to anywhere you want with minimal keystrokes, with just one key binding.
 " `s{char}{label}`
-nmap s <Plug>(easymotion-s)
+nmap <Leader>s <Plug>(easymotion-s)
 " or
 " `s{char}{char}{label}`
 " Need one more keystroke, but on average, it may be more comfortable.
-nmap s <Plug>(easymotion-s2)
+nmap <Leader>s <Plug>(easymotion-s2)
 
 " Turn on case sensitive feature
 " type `l` and match `l`&`L`
@@ -192,6 +195,19 @@ map t <Plug>(easymotion-tl)
 map F <Plug>(easymotion-Fl)
 map T <Plug>(easymotion-Tl)
 
-" Jump to first match with enter
-let g:EasyMotion_enter_jump_first = 1
+"" Jump to first match with enter
+"let g:EasyMotion_enter_jump_first = 1
 
+" -----------------------------------
+" Set Syntastic
+" -----------------------------------
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_save = 1
+"let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
